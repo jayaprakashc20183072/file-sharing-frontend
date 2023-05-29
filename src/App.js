@@ -14,7 +14,7 @@ function App() {
         const data = new FormData();
         data.append("name", file.name);
         data.append("file", file);
-        // let response =
+       
         let response = await uploadFile(data);
         setResult(response.path);
       }
@@ -26,7 +26,8 @@ function App() {
     <div className="container">
       <div className="wrapper">
         <h1>Simple File Sharing</h1>
-        <h2>Upload and share the download link</h2>
+        <h2>Click on Upload to upload your file. </h2>
+        <h2>Press download and share the downloaded link. </h2>
         <div>
           <button onClick={openFiles}>Upload</button>
           <input
@@ -34,7 +35,7 @@ function App() {
             type="file"
             onChange={(e) => setFile(e.target.files[0])}
           />
-          <a href={result} target="_blank">
+          <a href={result} rel="noreferrer" target="_blank">
             <button className="downloadButton">Download</button>
           </a>
         </div>
