@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+    display: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+    background-color: black;
+    border: none;
+    padding: 12px 0;
+    color: beige;
+    font-weight: 700;
+    border-radius: 8px;
+    width: 100px;
+    font-size: 20px;
+    
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:hover {
+    background-color: beige;
+    color: black;
 }
-
-.App-link {
-  color: #61dafb;
+.container {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column;  */
+    align-items:flex-start; 
+    height: 100vh;
+    background-color: #8a0027;
+background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+    margin-bottom: 20px;
+    color: #FBFFDC;
+    font-size: 50px;
+    font-family: "McLaren", cursive;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+h2 {
+    color: #FBFFDC;
+    font-family: "McLaren", cursive;
+    margin-bottom: 20px;
+}
+a {
+    font-family: "McLaren", cursive;
+    color: #FBFFDC;
+}
+.downloadButton {
+    margin-left: 10px;
+    width: 120px;
 }
